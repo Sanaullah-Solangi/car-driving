@@ -26,10 +26,14 @@ function moveCar(event) {
       }
     }, 1000);
   }, 50);
+  startBtn.style.backgroundColor = "rgb(2, 92, 2)";
   greenLight.style.backgroundColor = "green";
+  stopBtn.style.backgroundColor = "red";
   refId = ref;
 }
 
 function stopCar() {
+  stopBtn.style.backgroundColor = "rgb(182, 3, 3";
+  startBtn.style.backgroundColor = "green";
   clearInterval(refId);
 }
