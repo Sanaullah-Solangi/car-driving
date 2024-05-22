@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: jost;
+  text-transform: capitalize;
 }
 .mainContainer {
   height: 100vh;
@@ -13,8 +14,10 @@
   overflow: hidden;
 }
 .car,
-.traficSignal,
-.lights {
+.traficSignal1,
+.traficSignal2,
+.lights,
+.btns {
   position: absolute;
 }
 .car {
@@ -22,14 +25,21 @@
   bottom: 0%;
 }
 
-.traficSignal,
+.traficSignal1,
+.traficSignal2,
 .lights {
   background-color: black;
 }
-.traficSignal {
+.traficSignal1 {
+  left: 25%;
+}
+.traficSignal2 {
+  right: 5%;
+}
+.traficSignal1,
+.traficSignal2 {
   width: 10px;
   height: 100px;
-  right: 5%;
 }
 
 .lights {
@@ -64,4 +74,23 @@
 }
 .yellowLight {
   background-color: yellow;
+}
+.btns {
+  left: 5%;
+  top: 5%;
+}
+
+.startBtn {
+  background-color: green;
+}
+.stopBtn {
+  background-color: red;
+}
+
+.btn {
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  padding: 10px 20px;
 }
