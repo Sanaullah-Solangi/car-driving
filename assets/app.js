@@ -25,8 +25,7 @@ function moveCar(event) {
         signalTwoGreen.style.backgroundColor = "rgb(255, 255, 255, 0.3)";
       }
     }, 1000);
-    console.log(count);
-  }, 100);
+  }, 50);
   greenLight.style.backgroundColor = "green";
   refId = ref;
 }
